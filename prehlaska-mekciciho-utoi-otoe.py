@@ -21,4 +21,4 @@ def ctrnacte_stoleti(text):
     return text
 
 result = ctrnacte_stoleti("oráčóm čuch pĺúcě našu kašu kupuju mažú prac´uješ oráčovi Judášovi koňóm kráĺovic mořóm noc´ovati bičovati ")
-print(result, "\n čuch pĺúcě našu kašu kupuju mažú prac´uješ oráčovi Judášovi koňóm kráĺovic mořóm noc´ovati bičovati")
+print(result, "\n oráčóm čuch pĺúcě našu kašu kupuju mažú prac´uješ oráčovi Judášovi koňóm kráĺovic mořóm noc´ovati bičovati")
