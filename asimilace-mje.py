@@ -1,8 +1,8 @@
 import re
 
-def tautosylabicke_aj(text):
+def asimilace_mje(text):
     patterns = [
-        (r"aj", r"ej")
+        (r"w", r"v")
     ]
 
     for pattern, replacement in patterns:
@@ -10,5 +10,5 @@ def tautosylabicke_aj(text):
 
     return text
 
-result = tautosylabicke_aj("najlepší krajčí házaj")
+result = asimilace_mje("wálka")
 print(result)

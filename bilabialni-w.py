@@ -1,6 +1,6 @@
 import re
 
-def inicialni_o(text):
+def bilabialni_w(text):
     patterns = [
         (r"w", r"v")
     ]
@@ -10,5 +10,5 @@ def inicialni_o(text):
 
     return text
 
-result = inicialni_o("wálka")
+result = bilabialni_w("wálka")
 print(result)
