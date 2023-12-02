@@ -1,8 +1,9 @@
 import re
 
-def asimilace_mje(text):
+def disimilace_sc_st(text):
     patterns = [
-        (r"mje", r"mňě")
+        (r"šč", r"sť"),
+        (r"šť([bcdďfghjklmnňpqrřsštťvwxzž])", r"št\1")
     ]
 
     for pattern, replacement in patterns:
@@ -10,5 +11,5 @@ def asimilace_mje(text):
 
     return text
 
-result = asimilace_mje("mjesíc")
+result = disimilace_sc_st("šťváti")
 print(result)

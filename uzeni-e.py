@@ -1,8 +1,8 @@
 import re
 
-def asimilace_mje(text):
+def uzeni_e(text):
     patterns = [
-        (r"mje", r"mňě")
+        (r"é", r"í")
     ]
 
     for pattern, replacement in patterns:
@@ -10,5 +10,5 @@ def asimilace_mje(text):
 
     return text
 
-result = asimilace_mje("mjesíc")
+result = uzeni_e("postélka čélko zelé dobrého")
 print(result)
