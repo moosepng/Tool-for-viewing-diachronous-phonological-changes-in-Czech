@@ -22,6 +22,3 @@ def diftongizace_ou_ou(text):
         text = re.sub(pattern, replacement, text)
 
     return text
-
-result2 = diftongizace_ou_ou(result1)
-print(result2)

@@ -9,6 +9,3 @@ def monoftongizace_uo(text):
         text = re.sub(pattern, replacement, text)
 
     return text
-
-result = monoftongizace_uo("bi̯eda mi̯era vi̯era znameni̯e")
-print(result)

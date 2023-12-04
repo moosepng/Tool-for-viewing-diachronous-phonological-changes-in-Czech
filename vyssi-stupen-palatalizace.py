@@ -9,6 +9,3 @@ def vyssi_palatalizace(text):
         text = re.sub(pattern, replacement, text)
 
     return text
-
-result = vyssi_palatalizace("s´´ěmo z´´ět c´´ěsta duš´´ě ž´´ěleti pláč´´ě")
-print(result)

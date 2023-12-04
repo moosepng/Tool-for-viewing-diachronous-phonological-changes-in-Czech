@@ -9,6 +9,3 @@ def inicialni_o(text):
         text = re.sub(pattern, replacement, text)
 
     return text
-
-result = inicialni_o("obilí")
-print(result)

@@ -19,6 +19,3 @@ def mekcici_ui_oe(text):
         text = re.sub(pattern, replacement, text)
 
     return text
-
-result = mekcici_ui_oe("oráčóm čuch pĺúcě našu kašu kupuju mažú prac´uješ oráčovi Judášovi koňóm kráĺovic mořóm noc´ovati bičovati ")
-print(result, "\n oráčóm čuch pĺúcě našu kašu kupuju mažú prac´uješ oráčovi Judášovi koňóm kráĺovic mořóm noc´ovati bičovati")

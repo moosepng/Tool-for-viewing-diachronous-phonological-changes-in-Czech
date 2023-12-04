@@ -9,6 +9,3 @@ def bilabialni_w(text):
         text = re.sub(pattern, replacement, text)
 
     return text
-
-result = bilabialni_w("wálka")
-print(result)

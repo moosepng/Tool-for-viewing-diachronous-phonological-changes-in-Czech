@@ -9,6 +9,3 @@ def posileni_dift_dlouheho_jat(text):
         text = re.sub(pattern, replacement, text)
 
     return text
-
-result = posileni_dift_dlouheho_jat("dě̄lo")
-print(result)

@@ -10,6 +10,3 @@ def slabicne_rl(text):
         text = re.sub(pattern, replacement, text)
 
     return text
-
-result = slabicne_rl("bratr nesl krve")
-print(result)

@@ -22,6 +22,3 @@ def diftongizace_ej_ej(text):
         text = re.sub(pattern, replacement, text)
 
     return text
-
-result2 = diftongizace_ej_ej(result1)
-print(result2)

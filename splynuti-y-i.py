@@ -9,6 +9,3 @@ def bilabialni_i_y(text):
         text = re.sub(pattern, replacement, text)
 
     return text
-
-result = bilabialni_i_y("byl mysleti")
-print(result)

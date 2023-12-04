@@ -10,6 +10,3 @@ def slabikotvorne_lr(text):
         text = re.sub(pattern, replacement, text)
 
     return text
-
-result = slabikotvorne_lr("žr̥ₑt")
-print(result)

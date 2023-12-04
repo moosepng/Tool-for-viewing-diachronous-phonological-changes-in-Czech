@@ -9,6 +9,3 @@ def splynuti_lal(text):
         text = re.sub(pattern, replacement, text)
 
     return text
-
-result = splynuti_lal("łáska")
-print(result)

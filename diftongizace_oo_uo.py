@@ -9,6 +9,3 @@ def diftongizace_oo_uo(text):
         text = re.sub(pattern, replacement, text)
 
     return text
-
-result = diftongizace_oo_uo("bóh dóm vóči svój")
-print(result)

@@ -9,6 +9,3 @@ def asimilace_mje(text):
         text = re.sub(pattern, replacement, text)
 
     return text
-
-result = asimilace_mje("mjesíc")
-print(result)

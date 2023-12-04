@@ -9,6 +9,3 @@ def uzeni_e(text):
         text = re.sub(pattern, replacement, text)
 
     return text
-
-result = uzeni_e("postélka čélko zelé dobrého")
-print(result)

@@ -10,6 +10,3 @@ def zanik_kratkeho_jat(text):
         text = re.sub(pattern, replacement, text)
 
     return text
-
-result = zanik_kratkeho_jat("město")
-print(result)

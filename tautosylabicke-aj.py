@@ -9,6 +9,3 @@ def tautosylabicke_aj(text):
         text = re.sub(pattern, replacement, text)
 
     return text
-
-result = tautosylabicke_aj("najlepší krajčí házaj")
-print(result)

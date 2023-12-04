@@ -10,6 +10,3 @@ def disimilace_sc_st(text):
         text = re.sub(pattern, replacement, text)
 
     return text
-
-result = disimilace_sc_st("šťváti")
-print(result)
