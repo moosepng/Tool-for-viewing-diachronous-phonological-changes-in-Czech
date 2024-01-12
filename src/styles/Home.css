@@ -1,0 +1,19 @@
+
+
+h1 {
+  font-size: 5em;
+}
+
+.scroll-container {
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory; /* Enables snap effect */
+}
+
+.scroll-content {
+  width: 300%; /* Adjust as necessary */
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
