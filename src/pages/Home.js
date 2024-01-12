@@ -84,6 +84,13 @@ const Home = () => {
                     <p key={index}>{ruleName}</p>
                 ))}
             </div>
+            <div>
+                <p>
+                    <br></br>
+                    <br></br>
+                    <b>slova na rychlé zkopírování:</b> pĺúcě koňóm Judášovi s´´ěmo kóň dě̄lo čₑr̥t bóh był bi̯eda 
+                </p>
+            </div>
         </div>
     );
 };
