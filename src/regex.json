@@ -1,214 +1,144 @@
 [
     {
-        "name" : "diftongizace zadního vokálu ó > u̯ o",
-        "search" : "ó",
-        "replace" : "u̯o",
-        "period" : 2
-    },
-
-    {
-        "name" : "monoftongizace u̯ o > ú",
-        "search" : "u̯o",
-        "replace" : "ú",
-        "period" : 3
-    },
-    {
-        "name" : "asimilace místa artikulace mje > mňe",
-        "search" : "mje",
-        "replace" : "mňě",
-        "period" : 4
-    },
-    {
-        "name" : "změna bilabiálního w > v",
-        "search" : "w",
-        "replace" : "v",
-        "period" : 3
-    },
-    {
-        "name" : "diftongizace ú > o̬u̯",
-        "search" : "ú",
-        "replace" : "o̬u̯",
-        "period" : 2
-    },
-    {
-        "name" : "diftongizace ú > o̬u̯",
-        "search" : "o̬u̯",
-        "replace" : "ou̯",
-        "period" : 3
-    },
-    {
-        "name" : "diftongizace tvrdého dlouhého ý > ei̯ (ej)",
-        "search" : "ý",
-        "replace" : "e̬i̯",
-        "period" : 2
-    },
-    {
-        "name" : "diftongizace tvrdého dlouhého ý > ei̯ (ej)",
-        "search" : "e̬i̯",
-        "replace" : "ei̯",
-        "period" : 3
+        "period": 1,
+        "rules": [
+            {
+                "name": "posílení diftongického charakteru dlouhého jať",
+                "patterns": [
+                    { "search": "ě̄", "replace": "i̯e" }
+                ]
+            },
+            {
+                "name": "přehláska měkčícího",
+                "patterns": [
+                    { "search": "([žščřcjďťň])u", "replace": "$1i" },
+                    { "search": "([žščřcďťň])ú", "replace": "$1í" },
+                    { "search": "ĺu", "replace": "li" },
+                    { "search": "ĺú", "replace": "lí" },
+                    { "search": "´u", "replace": "i" },
+                    { "search": "([žčřcjďťň])o", "replace": "$1ě" },
+                    { "search": "([žčřcjďť])ó", "replace": "$1ie" },
+                    { "search": "´o", "replace": "ě" },
+                    { "search": "šo", "replace": "še" },
+                    { "search": "ĺo", "replace": "le" },
+                    { "search": "ňó", "replace": "nie" }
+                ]
+            },
+            {
+                "name": "zánik krátkého jať",
+                "patterns": [
+                    { "search": "([pbmvf])ě", "replace": "$1je" },
+                    { "search": "([tkdgcčďsšzžnlrř])ě", "replace": "$1e" }
+                ]
+            },
+            {
+                "name": "ve skupině /čr̥/, /žr̥/ se vedle likvid ustálil vokál e",
+                "patterns": [
+                    { "search": "(č)(ₑr̥|r̥ₑ)", "replace": "$1er" },
+                    { "search": "(ž)(ₑr̥|r̥ₑ)", "replace": "$1er" }
+                ]
+            },
+            {
+                "name": "2. fáze historické depalatalizace",
+                "patterns": [
+                    { "search": "´´ě", "replace": "e" }
+                ]
+            }
+            ]
     },
     {
-        "name" : "disimilace šč > šť / št",
-        "search" : "šč",
-        "replace" : "šť",
-        "period" : 3
+        "period": 2,
+        "rules": [
+            {
+                "name": "diftongizace zadního vokálu ó > u̯ o",
+                "patterns": [
+                    { "search": "ó", "replace": "u̯o" }
+                ]           
+            },
+            {
+                "name": "diftongizace ú > o̬u̯",
+                "patterns": [
+                    { "search": "ú", "replace": "o̬u̯" }
+                ]
+            },
+            {
+                "name": "splynutí ł a l",
+                "patterns": [
+                    { "search": "ł", "replace": "l" }
+                ]
+            },
+            {
+                "name": "splynutí krátkého tvrdého /y/ s /i/ měkkým",
+                "patterns": [
+                    { "search": "y", "replace": "i" }
+                ]   
+            },
+            {
+                "name": "diftongizace tvrdého dlouhého ý > ei̯ (ej)",
+                "patterns": [
+                    { "search": "ý", "replace": "e̬i̯" },
+                    { "search": "e̬i̯", "replace": "ei̯" }
+                ]
+            }
+            ]
     },
     {
-        "name" : "disimilace šč > šť / št",
-        "search" : "šť([bcdďfghjklmnňpqrřsštťvwxzž])",
-        "replace" : "št$1",
-        "period" : 3
+        "period": 3,
+        "rules": [
+            {
+                "name": "monoftongizace u̯ o > ú",
+                "patterns": [
+                    { "search": "u̯o", "replace": "ú" }
+                ]
+            },
+            {
+                "name": "změna bilabiálního w > v",
+                "patterns": [
+                    { "search": "w", "replace": "v" }
+                ]
+            },
+            {
+                "name": "monoftongizace i̯e > í",
+                "patterns": [
+                { "search": "i̯e", "replace": "í" }
+                ]
+            },
+            {
+                "name": "disimilace šč > šť / št",
+                "patterns": [
+                    { "search": "šč", "replace": "šť" },
+                    { "search": "šť([bcdďfghjklmnňpqrřsštťvwxzž])", "replace": "št$1" }
+                ]
+            }
+            ]
     },
     {
-        "name" : "před iniciálním o- se vytváří protetické v",
-        "search" : "^o",
-        "replace" : "vo",
-        "period" : 4
-    },
-    {
-        "name" : "monoftongizace i̯e > í",
-        "search" : "i̯e",
-        "replace" : "í",
-        "period" : 3
-    },
-    {
-        "name" : "posílení diftongického charakteru dlouhého jať",
-        "search" : "ě̄",
-        "replace" : "i̯e",
-        "period" : 1
-    },
-    {
-        "name" : "přehláska měkčícího ´u > i",
-        "search" : "([žščřcjďťň])u",
-        "replace" : "$1i",
-        "period" : 1
-    },
-    {
-        "name" : "přehláska měkčícího ´u > i",
-        "search" : "([žščřcďťň])ú",
-        "replace" : "$1í",
-        "period" : 1
-    },
-    {
-        "name" : "přehláska měkčícího ´u > i",
-        "search" : "ĺu",
-        "replace" : "li",
-        "period" : 1
-    },
-    {
-        "name" : "přehláska měkčícího ´u > i",
-        "search" : "ĺú",
-        "replace" : "lí",
-        "period" : 1
-    },
-    {
-        "name" : "přehláska měkčícího ´o > ě",
-        "search" : "([žčřcjďťň])o",
-        "replace" : "$1ě",
-        "period" : 1
-    },
-    {
-        "name" : "přehláska měkčícího ´o > ě",
-        "search" : "([žčřcjďť])ó",
-        "replace" : "$1ie",
-        "period" : 1
-    },
-    {
-        "name" : "přehláska měkčícího ´u > i",
-        "search" : "´u",
-        "replace" : "i",
-        "period" : 1
-    },
-    {
-        "name" : "přehláska měkčícího ´o > ě",
-        "search" : "´o",
-        "replace" : "ě",
-        "period" : 1
-    },
-    {
-        "name" : "přehláska měkčícího ´o > ě",
-        "search" : "šo",
-        "replace" : "še",
-        "period" : 1
-    },
-    {
-        "name" : "přehláska měkčícího ´o > ě",
-        "search" : "ĺo",
-        "replace" : "le",
-        "period" : 1
-    },
-    {
-        "name" : "přehláska měkčícího ´o > ě",
-        "search" : "ňó",
-        "replace" : "nie",
-        "period" : 1
-    },
-    {
-        "name" : "",
-        "search" : "([tkdgcčďsšzžnlrř])r",
-        "replace" : "$1r̥",
-        "period" : 1
-    },
-    {
-        "name" : "",
-        "search" : "([tkdgcčďsšzžnlrř])l",
-        "replace" : "$1l̥",
-        "period" : 1
-    },
-    {
-        "name" : "ve skupině /čr̥/, /žr̥/ se vedle likvid ustálil vokál e",
-        "search" : "(č)(ₑr̥|r̥ₑ)",
-        "replace" : "$1er",
-        "period" : 1
-    },
-    {
-        "name" : "ve skupině /čr̥/, /žr̥/ se vedle likvid ustálil vokál e",
-        "search" : "(ž)(ₑr̥|r̥ₑ)",
-        "replace" : "$1er",
-        "period" : 1
-    },
-    {
-        "name" : "splynutí ł a l",
-        "search" : "ł",
-        "replace" : "l",
-        "period" : 2
-    },
-    {
-        "name" : "splynutí krátkého tvrdého /y/ s /i/ měkkým",
-        "search" : "y",
-        "replace" : "i",
-        "period" : 2
-    },
-    {
-        "name" : "změna tautosylabického aj > ej",
-        "search" : "aj",
-        "replace" : "ej",
-        "period" : 4
-    },
-    {
-        "name" : "úžení é > í",
-        "search" : "é",
-        "replace" : "í",
-        "period" : 4
-    },
-    {
-        "name" : "2. fáze historické depalatalizace",
-        "search" : "´´ě",
-        "replace" : "eA",
-        "period" : 1
-    },
-    {
-        "name" : "zánik krátkého jať",
-        "search" : "([pbmvf])ě",
-        "replace" : "$1je",
-        "period" : 1
-    },
-    {
-        "name" : "zánik krátkého jať",
-        "search" : "([tkdgcčďsšzžnlrř])ě",
-        "replace" : "$1e",
-        "period" : 1
+        "period": 4,
+        "rules": [
+            {
+            "name": "asimilace místa artikulace mje > mňe",
+            "patterns": [
+            { "search": "mje", "replace": "mňě" }
+                ]
+            },
+            {
+                "name": "před iniciálním o- se vytváří protetické v",
+                "patterns": [
+                    { "search": "^o", "replace": "vo" }
+                ]
+            },
+            {
+                "name": "změna tautosylabického aj > ej",
+                "patterns": [
+                    { "search": "aj", "replace": "ej" }
+                ]
+            },
+            {
+                "name": "úžení é > í",
+                "patterns": [
+                    { "search": "é", "replace": "í" }
+                ]
+            }
+        ]
     }
-
 ]
