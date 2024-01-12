@@ -9,7 +9,7 @@
                 ]
             },
             {
-                "name": "přehláska měkčícího",
+                "name": "přehláska měkčícího ´u > i, ´o > ě ",
                 "patterns": [
                     { "search": "([žščřcjďťň])u", "replace": "$1i" },
                     { "search": "([žščřcďťň])ú", "replace": "$1í" },
@@ -127,9 +127,9 @@
         "period": 4,
         "rules": [
             {
-            "name": "asimilace místa artikulace mje > mňe",
-            "patterns": [
-            { "search": "mje", "replace": "mňě" }
+                "name": "asimilace místa artikulace mje > mňe",
+                "patterns": [
+                    { "search": "mje", "replace": "mňě" }
                 ]
             },
             {
