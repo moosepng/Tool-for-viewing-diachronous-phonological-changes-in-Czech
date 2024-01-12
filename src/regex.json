@@ -56,7 +56,7 @@
                 ]           
             },
             {
-                "name": "diftongizace ú > o̬u̯",
+                "name": "diftongizace ú > o̬u̯ 1",
                 "patterns": [
                     { "search": "ú", "replace": "o̬u̯" }
                 ]
@@ -74,10 +74,9 @@
                 ]   
             },
             {
-                "name": "diftongizace tvrdého dlouhého ý > ei̯ (ej)",
+                "name": "diftongizace tvrdého dlouhého ý > ei̯ (ej) 1",
                 "patterns": [
-                    { "search": "ý", "replace": "e̬i̯" },
-                    { "search": "e̬i̯", "replace": "ei̯" }
+                    { "search": "ý", "replace": "e̬i̯" }
                 ]
             }
             ]
@@ -108,6 +107,18 @@
                 "patterns": [
                     { "search": "šč", "replace": "šť" },
                     { "search": "šť([bcdďfghjklmnňpqrřsštťvwxzž])", "replace": "št$1" }
+                ]
+            },
+            {
+                "name": "diftongizace ú > o̬u̯ 2",
+                "patterns": [
+                    { "search": "o̬u̯", "replace": "ou̯" }
+                ]
+            },
+            {
+                "name": "diftongizace tvrdého dlouhého ý > ei̯ (ej) 2",
+                "patterns": [
+                    { "search": "e̬i̯", "replace": "ei̯" }
                 ]
             }
             ]
