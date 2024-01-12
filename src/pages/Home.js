@@ -4,13 +4,13 @@ import '../styles/Home.css';
 
 const Home = () => {
     const [text, setText] = useState('');
-    const [part, setPart] = useState('14');
+    const [part, setPart] = useState('');
     const [inputWord, setInputWord] = useState('');
     const [appliedRules, setAppliedRules] = useState([]);
 
     useEffect(() => {
-        setText(inputWord);
-    }, [inputWord]);
+            setText(inputWord);
+        }, [inputWord]);
 
     const applyRegex = (inputText, periods) => {
         let appliedRuleNames = [];
