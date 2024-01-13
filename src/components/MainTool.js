@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import regexData from '../regex.json';
 import '../styles/MainTool.css';
 
-const MainTool = () => {
+function MainTool() {
     const [text, setText] = useState('');
     const [part, setPart] = useState('');
     const [inputWord, setInputWord] = useState('');
