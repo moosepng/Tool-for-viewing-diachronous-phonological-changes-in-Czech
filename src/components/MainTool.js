@@ -12,7 +12,7 @@ function MainTool() {
             setText(inputWord);
         }, [inputWord]);
 
-    const applyRegex = (inputText, periods) => {
+    function applyRegex(inputText, periods){
         let appliedRuleNames = [];
 
         regexData.forEach(periodData => {
@@ -32,7 +32,7 @@ function MainTool() {
         return { transformedText: inputText, ruleNames: appliedRuleNames };
     };
 
-    const handleScroll = (event) => {
+    function handleScroll(event) {
         const position = event.target.scrollLeft;
         const maxScrollLeft = event.target.scrollWidth - event.target.clientWidth;
         const index = Math.ceil((position / maxScrollLeft) * 4);
@@ -67,7 +67,7 @@ function MainTool() {
     };
 
     return (
-        <div className="home-container">
+        <div className="main-tool-container">
             <h1>{text}</h1>
             <div className="scroll-container" onScroll={handleScroll}>
                 <div className="scroll-content"></div>
@@ -83,13 +83,6 @@ function MainTool() {
                 {appliedRules.map((ruleName, index) => (
                     <p key={index}>{ruleName}</p>
                 ))}
-            </div>
-            <div>
-                <p>
-                    <br></br>
-                    <br></br>
-                    <b>slova na rychlé zkopírování:</b> pĺúcě koňóm Judášovi s´´ěmo kóň dě̄lo čₑr̥t bóh był bi̯eda 
-                </p>
             </div>
         </div>
     );
