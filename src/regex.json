@@ -1,155 +1,176 @@
 [
     {
+        "id":"posileni-diftong-dlouhy-jat",
         "period": 1,
-        "rules": [
-            {
-                "name": "posílení diftongického charakteru dlouhého jať",
-                "patterns": [
-                    { "search": "ě̄", "replace": "i̯e" }
-                ]
-            },
-            {
-                "name": "přehláska měkčícího ´u > i, ´o > ě ",
-                "patterns": [
-                    { "search": "([žščřcjďťň])u", "replace": "$1i" },
-                    { "search": "([žščřcďťň])ú", "replace": "$1í" },
-                    { "search": "ĺu", "replace": "li" },
-                    { "search": "ĺú", "replace": "lí" },
-                    { "search": "´u", "replace": "i" },
-                    { "search": "([žčřcjďťň])o", "replace": "$1ě" },
-                    { "search": "([žčřcjďť])ó", "replace": "$1ie" },
-                    { "search": "´o", "replace": "ě" },
-                    { "search": "šo", "replace": "še" },
-                    { "search": "ĺo", "replace": "le" },
-                    { "search": "ňó", "replace": "nie" }
-                ]
-            },
-            {
-                "name": "zánik krátkého jať",
-                "patterns": [
-                    { "search": "([pbmvf])ě", "replace": "$1je" },
-                    { "search": "([tkdgcčďsšzžnlrř])ě", "replace": "$1e" }
-                ]
-            },
-            {
-                "name": "ve skupině /čr̥/, /žr̥/ se vedle likvid ustálil vokál e",
-                "patterns": [
-                    { "search": "(č)(ₑr̥|r̥ₑ)", "replace": "$1er" },
-                    { "search": "(ž)(ₑr̥|r̥ₑ)", "replace": "$1er" }
-                ]
-            },
-            {
-                "name": "2. fáze historické depalatalizace",
-                "patterns": [
-                    { "search": "´´ě", "replace": "e" }
-                ]
-            }
-            ]
+        "name": "posílení diftongického charakteru dlouhého jať",
+        "patterns": [
+            { "search": "ě̄", "replace": "i̯e" }
+        ]
     },
     {
+        "id":"prehlaska-mekcici-ui-oe",
+        "period": 1,
+        "name": "přehláska měkčícího ´u > i, ´o > ě ",
+        "patterns": [
+            { "search": "([žščřcjďťň])u", "replace": "$1i" },
+            { "search": "([žščřcďťň])ú", "replace": "$1í" },
+            { "search": "ĺu", "replace": "li" },
+            { "search": "ĺú", "replace": "lí" },
+            { "search": "´u", "replace": "i" },
+            { "search": "([žčřcjďťň])o", "replace": "$1ě" },
+            { "search": "([žčřcjďť])ó", "replace": "$1ie" },
+            { "search": "´o", "replace": "ě" },
+            { "search": "šo", "replace": "še" },
+            { "search": "ĺo", "replace": "le" },
+            { "search": "ňó", "replace": "nie" }
+        ]
+    },
+    {
+        "id":"zanik-kratkeho-jat",
+        "period": 1,
+        "name": "zánik krátkého jať",
+        "patterns": [
+            { "search": "([pbmvf])ě", "replace": "$1je" },
+            { "search": "([tkdgcčďsšzžnlrř])ě", "replace": "$1e" }
+        ]
+    },
+    {
+        "id":"cr-zr-vokal-e",
+        "period": 1,
+        "name": "ustálení vokálu e ve skupině /čr̥/, /žr̥/",
+        "patterns": [
+            { "search": "(č)(ₑr̥|r̥ₑ)", "replace": "$1er" },
+            { "search": "(ž)(ₑr̥|r̥ₑ)", "replace": "$1er" }
+        ]
+    },
+    {
+        "id":"druha-faze-depalatalizace",
+        "period": 1,
+        "name": "2. fáze historické depalatalizace",
+        "patterns": [
+            { "search": "´´ě", "replace": "e" }
+        ]
+    },
+    {
+        "id":"diftong-zadni-vokal-o-uo",
         "period": 2,
-        "rules": [
-            {
-                "name": "diftongizace zadního vokálu ó > u̯ o",
-                "patterns": [
-                    { "search": "ó", "replace": "u̯o" }
-                ]           
-            },
-            {
-                "name": "diftongizace ú > o̬u̯ 1",
-                "patterns": [
-                    { "search": "ú", "replace": "o̬u̯" }
-                ]
-            },
-            {
-                "name": "splynutí ł a l",
-                "patterns": [
-                    { "search": "ł", "replace": "l" }
-                ]
-            },
-            {
-                "name": "splynutí krátkého tvrdého /y/ s /i/ měkkým",
-                "patterns": [
-                    { "search": "y", "replace": "i" }
-                ]   
-            },
-            {
-                "name": "diftongizace tvrdého dlouhého ý > ei̯ (ej) 1",
-                "patterns": [
-                    { "search": "ý", "replace": "e̬i̯" }
-                ]
-            }
-            ]
+        "name": "diftongizace zadního vokálu ó > u̯ o",
+        "patterns": [
+            { "search": "ó", "replace": "u̯o" }
+        ]           
     },
     {
+        
+        "id":"diftong-u-ou",
+        "period": 2,
+        "name": "diftongizace ú > o̬u̯ 1",
+        "patterns": [
+            { "search": "ú", "replace": "o̬u̯" }
+        ]
+    },
+    {
+        "id":"splynuti-l-l",
+        "period": 2,
+        "name": "splynutí ł a l",
+        "patterns": [
+            { "search": "ł", "replace": "l" }
+        ]
+    },
+    {
+        "id":"splynuti-y-i",
+        "period": 2,
+        "name": "splynutí krátkého tvrdého /y/ s /i/ měkkým",
+        "patterns": [
+            { "search": "y", "replace": "i" }
+        ]   
+    },
+    {
+        "id":"diftong-y-ej",
+        "period": 2,
+        "name": "diftongizace tvrdého dlouhého ý > ei̯ (ej) 1",
+        "patterns": [
+            { "search": "ý", "replace": "e̬i̯" }
+        ]
+    },
+    {
+        "id":"monoftong-uo-u",
         "period": 3,
-        "rules": [
-            {
-                "name": "monoftongizace u̯ o > ú",
-                "patterns": [
-                    { "search": "u̯o", "replace": "ú" }
-                ]
-            },
-            {
-                "name": "změna bilabiálního w > v",
-                "patterns": [
-                    { "search": "w", "replace": "v" }
-                ]
-            },
-            {
-                "name": "monoftongizace i̯e > í",
-                "patterns": [
-                { "search": "i̯e", "replace": "í" }
-                ]
-            },
-            {
-                "name": "disimilace šč > šť / št",
-                "patterns": [
-                    { "search": "šč", "replace": "šť" },
-                    { "search": "šť([bcdďfghjklmnňpqrřsštťvwxzž])", "replace": "št$1" }
-                ]
-            },
-            {
-                "name": "diftongizace ú > o̬u̯ 2",
-                "patterns": [
-                    { "search": "o̬u̯", "replace": "ou̯" }
-                ]
-            },
-            {
-                "name": "diftongizace tvrdého dlouhého ý > ei̯ (ej) 2",
-                "patterns": [
-                    { "search": "e̬i̯", "replace": "ei̯" }
-                ]
-            }
-            ]
+        "name": "monoftongizace u̯ o > ú",
+        "patterns": [
+            { "search": "u̯o", "replace": "ú" }
+        ]
     },
     {
+        "id":"zmena-bilabialni-w-v",
+        "period": 3,
+        "name": "změna bilabiálního w > v",
+        "patterns": [
+            { "search": "w", "replace": "v" }
+        ]
+    },
+    {
+        "id":"monoftong-ie-i",
+        "period": 3,
+        "name": "monoftongizace i̯e > í",
+        "patterns": [
+        { "search": "i̯e", "replace": "í" }
+        ]
+    },
+    {
+        "id":"disimilace-sc-st",
+        "period": 3,
+        "name": "disimilace šč > šť / št",
+        "patterns": [
+            { "search": "šč", "replace": "šť" },
+            { "search": "šť([bcdďfghjklmnňpqrřsštťvwxzž])", "replace": "št$1" }
+        ]
+    },
+    {
+        "id":"diftong-u-ou-2",
+        "period": 3,
+        "name": "diftongizace ú > o̬u̯ 2",
+        "patterns": [
+            { "search": "o̬u̯", "replace": "ou̯" }
+        ]
+    },
+    {
+        "id":"diftong-y-ej-2",
+        "period": 3,
+        "name": "diftongizace tvrdého dlouhého ý > ei̯ (ej) 2",
+        "patterns": [
+            { "search": "e̬i̯", "replace": "ei̯" }
+        ]
+    },
+    {
+        "id":"asimilace-mje-mne",
         "period": 4,
-        "rules": [
-            {
-                "name": "asimilace místa artikulace mje > mňe",
-                "patterns": [
-                    { "search": "mje", "replace": "mňě" }
-                ]
-            },
-            {
-                "name": "před iniciálním o- se vytváří protetické v",
-                "patterns": [
-                    { "search": "^o", "replace": "vo" }
-                ]
-            },
-            {
-                "name": "změna tautosylabického aj > ej",
-                "patterns": [
-                    { "search": "aj", "replace": "ej" }
-                ]
-            },
-            {
-                "name": "úžení é > í",
-                "patterns": [
-                    { "search": "é", "replace": "í" }
-                ]
-            }
+        "name": "asimilace místa artikulace mje > mňe",
+        "patterns": [
+            { "search": "mje", "replace": "mňě" }
+        ]
+    },
+    {
+        "id":"inicialni-v",
+        "period": 4,
+        "name": "před iniciálním o- se vytváří protetické v",
+        "patterns": [
+            { "search": "^o", "replace": "vo" }
+        ]
+    },
+    {
+        "id":"zmena-aj-ej",
+        "period": 4,
+        "name": "změna tautosylabického aj > ej",
+        "patterns": [
+            { "search": "aj", "replace": "ej" }
+        ]
+    },
+    {
+        "id":"ezeni-e-i",
+        "period": 4,
+        "name": "úžení é > í",
+        "patterns": [
+            { "search": "é", "replace": "í" }
         ]
     }
-]
+    ]

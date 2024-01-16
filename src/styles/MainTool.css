@@ -1,20 +1,30 @@
-
-
 h1 {
-    font-size: 5em;
-  }
-  
-  .scroll-container {
-    width: 100%;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-  }
-  
-  .scroll-content {
-    width: 300%;
-    height: 20px;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  
+  font-size: 5em;
+}
+
+.scroll-container {
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  overflow-y: scroll; /* Add this property to force the creation of a scrollbar */
+}
+
+.scroll-content {
+  width: 300%;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Webkit (Chrome, Safari) */
+.scroll-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
