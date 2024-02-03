@@ -54,7 +54,6 @@ function MainTool() {
                 result = { transformedText: dictionaryEntry.oldestForm, ruleNames: [] };
             }
           } else if (dictionaryEntry.oldestForm === inputWord) {
-            // 'oldform' case
             switch (index) {
               case 0:
                 partNumber = '13';
@@ -102,7 +101,7 @@ function MainTool() {
           return 'oldform';
         }
       }
-      return ''; 
+      return '';
     }
 
     if (inputWord.trim() === '') {
@@ -115,7 +114,9 @@ function MainTool() {
 
       if (period !== '') {
         setText(inputWord);
-        updatePart(currentPartIndex);
+
+        setCurrentPartIndex(0);
+        updatePart(0);
       } else {
         setText('');
         setPart('');
@@ -123,7 +124,7 @@ function MainTool() {
         setCurrentPartIndex(0);
       }
     }
-  }, [inputWord, currentPartIndex, updatePart]);
+  }, [inputWord, updatePart]);
 
   function applyRegex(inputText, periods) {
     let appliedRuleNames = [];
@@ -150,10 +151,14 @@ function MainTool() {
       if (newIndex >= 0 && newIndex < 5) {
         setCurrentPartIndex(newIndex);
         console.log('Current Part Index:', newIndex);
+
+        updatePart(newIndex);
       }
     } else {
       setCurrentPartIndex(0);
       console.log('Current Part Index: 0');
+
+      updatePart(0);
     }
   }
 
@@ -170,13 +175,13 @@ function MainTool() {
           onClick={() => handlePartChange(-1)}
           disabled={currentPartIndex === 0}
         >
-          Previous Part
+          ←
         </button>
         <button
           onClick={() => handlePartChange(1)}
           disabled={currentPartIndex === 4}
         >
-          Next Part
+          →
         </button>
       </div>
       <h1>{text}</h1>
