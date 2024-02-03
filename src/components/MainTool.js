@@ -28,7 +28,6 @@ function MainTool() {
           let result;
 
           if (dictionaryEntry.currentForm === inputWord) {
-            // 'currentform' case
             switch (index) {
               case 0:
                 partNumber = '16';
@@ -103,11 +102,10 @@ function MainTool() {
           return 'oldform';
         }
       }
-      return ''; // Return an empty string if the word is not found in the dictionary
+      return ''; 
     }
 
     if (inputWord.trim() === '') {
-      // Reset states when inputWord is empty
       setText('');
       setPart('');
       setAppliedRules([]);
@@ -119,7 +117,6 @@ function MainTool() {
         setText(inputWord);
         updatePart(currentPartIndex);
       } else {
-        // If the word is not recognized, reset displayed values
         setText('');
         setPart('');
         setAppliedRules([]);
