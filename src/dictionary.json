@@ -3,5 +3,10 @@
     "currentForm":"kúň",
     "oldestForm": "kóň",
     "rules":["diftong-zadni-vokal-o-uo", "monoftong-uo-u"]
+    },
+    {
+        "currentForm":"plíce",
+        "oldestForm": "pĺúcě",
+        "rules":[]
     }
 ]

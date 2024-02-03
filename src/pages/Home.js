@@ -11,7 +11,7 @@ function Home() {
           <p>
             <br></br>
             <br></br>
-            <b>slova na rychlé zkopírování:</b> pĺúcě koňóm Judášovi s´´ěmo kóň dě̄lo čₑr̥t bóh był bi̯eda 
+            <b>slova na rychlé zkopírování:</b> pĺúcě kóň dě̄lo bi̯eda 
           </p>
         </div>
       </div>
