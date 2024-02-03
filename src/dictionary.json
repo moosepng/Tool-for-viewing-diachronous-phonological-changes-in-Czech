@@ -8,5 +8,50 @@
         "currentForm":"plíce",
         "oldestForm": "pĺúcě",
         "rules":[]
+    },
+    {
+        "currentForm":"míra",
+        "oldestForm":"mě̄ra",
+        "rules":[]
+    },
+    {
+        "currentForm":"zelí",
+        "oldestForm":"zelé",
+        "rules":[]
+    },
+    {
+        "currentForm":"zelí",
+        "oldestForm":"zelé",
+        "rules":[]
+    },
+    {
+        "currentForm":"koňúm",
+        "oldestForm":"koňóm",
+        "rules":[]
+    },
+    {
+        "currentForm":"dělo",
+        "oldestForm":"dě̄lo",
+        "rules":[]
+    },
+    {
+        "currentForm":"pracuješ",
+        "oldestForm":"prac´uješ",
+        "rules":[]
+    },
+    {
+        "currentForm":"bída",
+        "oldestForm":"bi̯eda",
+        "rules":[]
+    },
+    {
+        "currentForm":"mlýn",
+        "oldestForm":"mlýn",
+        "rules":[]
+    },
+    {
+        "currentForm":"mouka",
+        "oldestForm":"múka",
+        "rules":[]
     }
 ]
