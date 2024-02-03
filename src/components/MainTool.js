@@ -56,23 +56,23 @@ function MainTool() {
           } else if (dictionaryEntry.oldestForm === inputWord) {
             switch (index) {
               case 0:
-                partNumber = '13';
+                partNumber = '13. století';
                 result = { transformedText: dictionaryEntry.oldestForm, ruleNames: [] };
                 break;
               case 1:
-                partNumber = '14';
+                partNumber = '14. století';
                 result = applyRegex(dictionaryEntry.oldestForm, [1]);
                 break;
               case 2:
-                partNumber = '14/15';
+                partNumber = 'Přelom 14. a 15. století';
                 result = applyRegex(dictionaryEntry.oldestForm, [1, 2]);
                 break;
               case 3:
-                partNumber = '15';
+                partNumber = '15. století';
                 result = applyRegex(dictionaryEntry.oldestForm, [1, 2, 3]);
                 break;
               case 4:
-                partNumber = '16';
+                partNumber = '16. století';
                 result = applyRegex(dictionaryEntry.oldestForm, [1, 2, 3, 4]);
                 break;
               default:
@@ -185,7 +185,7 @@ function MainTool() {
         </button>
       </div>
       <h1>{text}</h1>
-      <p>Current Part: {part}</p>
+      <p>{part}</p>
       <div className="applied-rules">
         {appliedRules.map((ruleName, index) => (
           <p key={index}>{ruleName}</p>
