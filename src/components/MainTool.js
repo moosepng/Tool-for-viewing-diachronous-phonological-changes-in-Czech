@@ -6,8 +6,10 @@ import dictionaryData from "../dictionary.json";
 function recognizePeriod(inputText) {
   for (const forms of dictionaryData) {
     if (forms.currentForm === inputText) {
+      console.log("currentform");
       return "currentform";
     } else if (forms.oldestForm === inputText) {
+      console.log("oldform");
       return "oldform";
     }
   }
@@ -45,75 +47,37 @@ function MainTool() {
     (index) => {
       if (inputWord.trim() !== "") {
         const dictionaryEntryCurrentForm = dictionaryData.find((entry) => entry.currentForm === inputWord);
-
         const dictionaryEntryOldForm = dictionaryData.find((entry) => entry.oldestForm === inputWord);
-
         const dictionaryEntry = dictionaryEntryCurrentForm || dictionaryEntryOldForm;
 
+        let partNumber = "";
+        let result = { transformedText: "", ruleNames: [] }; // Initialize the result object here
+
         if (dictionaryEntry) {
-          let partNumber;
-          let result;
-
-          if (dictionaryEntry.currentForm === inputWord) {
-            switch (index) {
-              case 0:
-                partNumber = "16";
-                result = applyRegex(dictionaryEntry.oldestForm, [1, 2, 3, 4]);
-                break;
-              case 1:
-                partNumber = "15";
-                result = applyRegex(dictionaryEntry.oldestForm, [1, 2, 3]);
-                break;
-              case 2:
-                partNumber = "14/15";
-                result = applyRegex(dictionaryEntry.oldestForm, [1, 2]);
-                break;
-              case 3:
-                partNumber = "14";
-                result = applyRegex(dictionaryEntry.oldestForm, [1]);
-                break;
-              case 4:
-                partNumber = "13";
-                result = { transformedText: dictionaryEntry.oldestForm, ruleNames: [] };
-                break;
-              default:
-                partNumber = "";
-                result = { transformedText: dictionaryEntry.oldestForm, ruleNames: [] };
-            }
-          } else if (dictionaryEntry.oldestForm === inputWord) {
-            switch (index) {
-              case 0:
-                partNumber = "13. století";
-                result = { transformedText: dictionaryEntry.oldestForm, ruleNames: [] };
-                break;
-              case 1:
-                partNumber = "14. století";
-                result = applyRegex(dictionaryEntry.oldestForm, [1]);
-                break;
-              case 2:
-                partNumber = "Přelom 14. a 15. století";
-                result = applyRegex(dictionaryEntry.oldestForm, [1, 2]);
-                break;
-              case 3:
-                partNumber = "15. století";
-                result = applyRegex(dictionaryEntry.oldestForm, [1, 2, 3]);
-                break;
-              case 4:
-                partNumber = "16. století";
-                result = applyRegex(dictionaryEntry.oldestForm, [1, 2, 3, 4]);
-                break;
-              default:
-                partNumber = "";
-                result = { transformedText: dictionaryEntry.oldestForm, ruleNames: [] };
-            }
+          switch (index) {
+            case 0:
+              partNumber = "Humanistická čeština a novější";
+              result = applyRegex(dictionaryEntry.oldestForm, [1, 2, 3]);
+              break;
+            case 1:
+              partNumber = "Čeština doby husitské";
+              result = applyRegex(dictionaryEntry.oldestForm, [1, 2]);
+              break;
+            case 2:
+              partNumber = "Čeština 14. století";
+              result = applyRegex(dictionaryEntry.oldestForm, [1]);
+              break;
+            default:
+              partNumber = "Starší než 14. století";
+              result = { transformedText: dictionaryEntry.oldestForm, ruleNames: [] };
           }
-
-          setText(result.transformedText);
-          setAppliedRules(result.ruleNames);
-          setPart(partNumber);
-        } else {
-          console.error("dictionaryEntry is undefined");
         }
+
+        setText(result.transformedText);
+        setAppliedRules(result.ruleNames);
+        setPart(partNumber);
+      } else {
+        console.error("Input word is empty");
       }
     },
     [inputWord]
@@ -126,15 +90,20 @@ function MainTool() {
       setAppliedRules([]);
       setCurrentPartIndex(0);
       setLeftButtonDisabled(true);
-      setRightButtonDisabled(false);
+      setRightButtonDisabled(true);
     } else {
       const period = recognizePeriod(inputWord);
 
-      if (period !== "") {
+      if (period === "currentform") {
         setText(inputWord);
-
         setCurrentPartIndex(0);
         updatePart(0);
+        setLeftButtonDisabled(false);
+        setRightButtonDisabled(true);
+      } else if (period === "oldform") {
+        setText(inputWord);
+        setCurrentPartIndex(3);
+        updatePart(3);
         setLeftButtonDisabled(true);
         setRightButtonDisabled(false);
       } else {
@@ -142,7 +111,7 @@ function MainTool() {
         setPart("");
         setAppliedRules([]);
         setCurrentPartIndex(0);
-        setLeftButtonDisabled(false);
+        setLeftButtonDisabled(true);
         setRightButtonDisabled(true);
       }
     }
@@ -152,7 +121,7 @@ function MainTool() {
     const newIndex = currentPartIndex + increment;
 
     if (inputWord.trim() !== "") {
-      if (newIndex >= 0 && newIndex < 5) {
+      if (newIndex >= 0 && newIndex < 4) {
         setCurrentPartIndex(newIndex);
         console.log("Current Part Index:", newIndex);
 
@@ -165,13 +134,13 @@ function MainTool() {
       updatePart(0);
     }
 
-    if (newIndex === 0) {
+    if (newIndex === 3) {
       setLeftButtonDisabled(true);
     } else {
       setLeftButtonDisabled(false);
     }
 
-    if (newIndex === 4) {
+    if (newIndex === 0) {
       setRightButtonDisabled(true);
     } else {
       setRightButtonDisabled(false);
@@ -180,16 +149,32 @@ function MainTool() {
 
   return (
     <div className="main-tool-container">
-      <input type="text" value={inputWord} onChange={(event) => setInputWord(event.target.value)} placeholder="Enter word" />
+      <input
+        type="text"
+        value={inputWord}
+        onChange={(event) => setInputWord(event.target.value)}
+        placeholder="Enter word"
+        list="suggested-words"
+      />
+
+      <datalist id="suggested-words">
+        {dictionaryData.map((entry, index) => (
+          <React.Fragment key={index}>
+            <option value={entry.currentForm} />
+            <option value={entry.oldestForm} />
+          </React.Fragment>
+        ))}
+      </datalist>
+
       <div className="part-buttons">
         <button
-          onClick={() => handlePartChange(-1)}
+          onClick={() => handlePartChange(1)}
           disabled={leftButtonDisabled || !inputWord.trim() || recognizePeriod(inputWord) === ""}
         >
           ←
         </button>
         <button
-          onClick={() => handlePartChange(1)}
+          onClick={() => handlePartChange(-1)}
           disabled={rightButtonDisabled || !inputWord.trim() || recognizePeriod(inputWord) === ""}
         >
           →

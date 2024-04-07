@@ -8,6 +8,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" exact element={<Home />} />
+          <Route path="/o-projektu" exact element={<Home />} />
+          <Route path="/seznam-slov" exact element={<Home />} />
         </Routes>
       </BrowserRouter>
     </div>

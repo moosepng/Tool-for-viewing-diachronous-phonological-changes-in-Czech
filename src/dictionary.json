@@ -1,57 +1,238 @@
 [
     {
-    "currentForm":"kúň",
-    "oldestForm": "kóň",
-    "rules":["diftong-zadni-vokal-o-uo", "monoftong-uo-u"]
+        "currentForm": "cit",
+        "oldestForm": "c'ut"
     },
     {
-        "currentForm":"plíce",
-        "oldestForm": "pĺúcě",
-        "rules":[]
+        "currentForm": "cíditi",
+        "oldestForm": "c'úditi"
     },
     {
-        "currentForm":"míra",
-        "oldestForm":"mě̄ra",
-        "rules":[]
+        "currentForm": "cítiti",
+        "oldestForm": "c'utiti"
     },
     {
-        "currentForm":"zelí",
-        "oldestForm":"zelé",
-        "rules":[]
+        "currentForm": "cizí",
+        "oldestForm": "c'uzí"
     },
     {
-        "currentForm":"zelí",
-        "oldestForm":"zelé",
-        "rules":[]
+        "currentForm": "čelist",
+        "oldestForm": "čel'usť"
     },
     {
-        "currentForm":"koňúm",
-        "oldestForm":"koňóm",
-        "rules":[]
+        "currentForm": "čít",
+        "oldestForm": "čúti"
     },
     {
-        "currentForm":"dělo",
-        "oldestForm":"dě̄lo",
-        "rules":[]
+        "currentForm": "jih",
+        "oldestForm": "juh"
     },
     {
-        "currentForm":"pracuješ",
-        "oldestForm":"prac´uješ",
-        "rules":[]
+        "currentForm": "Jiří",
+        "oldestForm": "Juří"
     },
     {
-        "currentForm":"bída",
-        "oldestForm":"bi̯eda",
-        "rules":[]
+        "currentForm": "jitro",
+        "oldestForm": "jutro"
     },
     {
-        "currentForm":"mlýn",
-        "oldestForm":"mlýn",
-        "rules":[]
+        "currentForm": "klíče",
+        "oldestForm": "kl'účě"
     },
     {
-        "currentForm":"mouka",
-        "oldestForm":"múka",
-        "rules":[]
+        "currentForm": "kožich",
+        "oldestForm": "kožuch"
+    },
+    {
+        "currentForm": "líbati",
+        "oldestForm": "l'úbati"
+    },
+    {
+        "currentForm": "plíce",
+        "oldestForm": "pl'úcě"
+    },
+    {
+        "currentForm": "seno",
+        "oldestForm": "sěno"
+    },
+    {
+        "currentForm": "duše",
+        "oldestForm": "dušě"
+    },
+    {
+        "currentForm": "duše",
+        "oldestForm": "dušě"
+    },
+    {
+        "currentForm": "říjen",
+        "oldestForm": "řújen"
+    },
+    {
+        "currentForm": "šťír",
+        "oldestForm": "ščúr"
+    },
+    {
+        "currentForm": "ťisíc",
+        "oldestForm": "tis'úc"
+    },
+    {
+        "currentForm": "vúňe",
+        "oldestForm": "wóňe"
+    },
+    {
+        "currentForm": "muže",
+        "oldestForm": "mužě"
+    },
+    {
+        "currentForm": "vjeno",
+        "oldestForm": "věno"
+    },
+    {
+        "currentForm": "místo",
+        "oldestForm": "mě̄sto"
+    },
+    {
+        "currentForm": "mňesto",
+        "oldestForm": "město"
+    },
+    {
+        "currentForm": "dílo",
+        "oldestForm": "dě̄lo"
+    },
+    {
+        "currentForm": "míra",
+        "oldestForm": "mě̄ra"
+    },
+    {
+        "currentForm": "čert",
+        "oldestForm": "čr̥t"
+    },
+    {
+        "currentForm": "červený",
+        "oldestForm": "čr̥wený"
+    },
+    {
+        "currentForm": "žerď",
+        "oldestForm": "žr̥ď"
+    },
+    {
+        "currentForm": "Br̥do",
+        "oldestForm": "Bir̥do"
+    },
+    {
+        "currentForm": "vr̥ba",
+        "oldestForm": "vir̥ba"
+    },
+    {
+        "currentForm": "sr̥dce",
+        "oldestForm": "sir̥dce"
+    },
+    {
+        "currentForm": "vl̥k",
+        "oldestForm": "wil̥k"
+    },
+    {
+        "currentForm": "mám",
+        "oldestForm": "jmám"
+    },
+    {
+        "currentForm": "cesta",
+        "oldestForm": "cěsta"
+    },
+    {
+        "currentForm": "řeka",
+        "oldestForm": "řěka"
+    },
+    {
+        "currentForm": "kúň",
+        "oldestForm": "kóň"
+    },
+    {
+        "currentForm": "búh",
+        "oldestForm": "bóh"
+    },
+    {
+        "currentForm": "dúm",
+        "oldestForm": "dóm"
+    },
+    {
+        "currentForm": "dúl",
+        "oldestForm": "dól"
+    },
+    {
+        "currentForm": "dvúr",
+        "oldestForm": "dwór"
+    },
+    {
+        "currentForm": "soud",
+        "oldestForm": "súd"
+    },
+    {
+        "currentForm": "soused",
+        "oldestForm": "súsěd"
+    },
+    {
+        "currentForm": "budoucí",
+        "oldestForm": "budúcí"
+    },
+    {
+        "currentForm": "míra",
+        "oldestForm": "mě̄ra"
+    },
+    {
+        "currentForm": "víra",
+        "oldestForm": "wě̄ra"
+    },
+    {
+        "currentForm": "luk",
+        "oldestForm": "łuk"
+    },
+    {
+        "currentForm": "vúči",
+        "oldestForm": "wóči"
+    },
+    {
+        "currentForm": "svúj",
+        "oldestForm": "swój"
+    },
+    {
+        "currentForm": "vejce",
+        "oldestForm": "wajce"
+    },
+    {
+        "currentForm": "krejčí",
+        "oldestForm": "krajčí"
+    },
+    {
+        "currentForm": "misleti",
+        "oldestForm": "mysleti"
+    },
+    {
+        "currentForm": "sin",
+        "oldestForm": "syn"
+    },
+    {
+        "currentForm": "jazik",
+        "oldestForm": "jazyk"
+    },
+    {
+        "currentForm": "ješťe",
+        "oldestForm": "ješče"
+    },
+    {
+        "currentForm": "šťesťí",
+        "oldestForm": "ščestí"
+    },
+    {
+        "currentForm": "zelí",
+        "oldestForm": "zelé"
+    },
+    {
+        "currentForm": "šťáva",
+        "oldestForm": "ščáva"
+    },
+    {
+        "currentForm": "nebožťík",
+        "oldestForm": "nebožčík"
     }
 ]
