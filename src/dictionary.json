@@ -1,238 +1,356 @@
 [
     {
         "currentForm": "cit",
-        "oldestForm": "c'ut"
+        "oldestForm": "c'ut",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "cíditi",
-        "oldestForm": "c'úditi"
+        "oldestForm": "c'úditi",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "cítiti",
-        "oldestForm": "c'utiti"
+        "oldestForm": "c'utiti",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "cizí",
-        "oldestForm": "c'uzí"
+        "oldestForm": "c'uzí",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "čelist",
-        "oldestForm": "čel'usť"
+        "oldestForm": "čel'usť",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "čít",
-        "oldestForm": "čúti"
+        "oldestForm": "čúti",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "jih",
-        "oldestForm": "juh"
+        "oldestForm": "juh",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "Jiří",
-        "oldestForm": "Juří"
+        "oldestForm": "Juří",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "jitro",
-        "oldestForm": "jutro"
+        "oldestForm": "jutro",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "klíče",
-        "oldestForm": "kl'účě"
+        "oldestForm": "kl'účě",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "kožich",
-        "oldestForm": "kožuch"
+        "oldestForm": "kožuch",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "líbati",
-        "oldestForm": "l'úbati"
+        "oldestForm": "l'úbati",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "plíce",
-        "oldestForm": "pl'úcě"
+        "oldestForm": "pl'úcě",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "seno",
-        "oldestForm": "sěno"
+        "oldestForm": "sěno",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "duše",
-        "oldestForm": "dušě"
+        "oldestForm": "dušě",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "duše",
-        "oldestForm": "dušě"
+        "oldestForm": "dušě",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "říjen",
-        "oldestForm": "řújen"
+        "oldestForm": "řújen",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "šťír",
-        "oldestForm": "ščúr"
+        "oldestForm": "ščúr",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "ťisíc",
-        "oldestForm": "tis'úc"
+        "oldestForm": "tis'úc",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "vúňe",
-        "oldestForm": "wóňe"
+        "oldestForm": "wóňe",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "muže",
-        "oldestForm": "mužě"
+        "oldestForm": "mužě",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "vjeno",
-        "oldestForm": "věno"
+        "oldestForm": "věno",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "místo",
-        "oldestForm": "mě̄sto"
+        "oldestForm": "mě̄sto",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "mňesto",
-        "oldestForm": "město"
+        "oldestForm": "město",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "dílo",
-        "oldestForm": "dě̄lo"
+        "oldestForm": "dě̄lo",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "míra",
-        "oldestForm": "mě̄ra"
+        "oldestForm": "mě̄ra",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "čert",
-        "oldestForm": "čr̥t"
+        "oldestForm": "čr̥t",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "červený",
-        "oldestForm": "čr̥wený"
+        "oldestForm": "čr̥wený",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "žerď",
-        "oldestForm": "žr̥ď"
+        "oldestForm": "žr̥ď",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "Br̥do",
-        "oldestForm": "Bir̥do"
+        "oldestForm": "Bir̥do",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "vr̥ba",
-        "oldestForm": "vir̥ba"
+        "oldestForm": "vir̥ba",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "sr̥dce",
-        "oldestForm": "sir̥dce"
+        "oldestForm": "sir̥dce",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "vl̥k",
-        "oldestForm": "wil̥k"
+        "oldestForm": "wil̥k",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "mám",
-        "oldestForm": "jmám"
+        "oldestForm": "jmám",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "cesta",
-        "oldestForm": "cěsta"
+        "oldestForm": "cěsta",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "řeka",
-        "oldestForm": "řěka"
+        "oldestForm": "řěka",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "kúň",
-        "oldestForm": "kóň"
+        "oldestForm": "kóň",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "búh",
-        "oldestForm": "bóh"
+        "oldestForm": "bóh",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "dúm",
-        "oldestForm": "dóm"
+        "oldestForm": "dóm",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "dúl",
-        "oldestForm": "dól"
+        "oldestForm": "dól",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "dvúr",
-        "oldestForm": "dwór"
+        "oldestForm": "dwór",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "soud",
-        "oldestForm": "súd"
+        "oldestForm": "súd",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "soused",
-        "oldestForm": "súsěd"
+        "oldestForm": "súsěd",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "budoucí",
-        "oldestForm": "budúcí"
+        "oldestForm": "budúcí",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "míra",
-        "oldestForm": "mě̄ra"
+        "oldestForm": "mě̄ra",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "víra",
-        "oldestForm": "wě̄ra"
+        "oldestForm": "wě̄ra",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "luk",
-        "oldestForm": "łuk"
+        "oldestForm": "łuk",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "vúči",
-        "oldestForm": "wóči"
+        "oldestForm": "wóči",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "svúj",
-        "oldestForm": "swój"
+        "oldestForm": "swój",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "vejce",
-        "oldestForm": "wajce"
+        "oldestForm": "wajce",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "krejčí",
-        "oldestForm": "krajčí"
+        "oldestForm": "krajčí",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "misleti",
-        "oldestForm": "mysleti"
+        "oldestForm": "mysleti",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "sin",
-        "oldestForm": "syn"
+        "oldestForm": "syn",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "jazik",
-        "oldestForm": "jazyk"
+        "oldestForm": "jazyk",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "ješťe",
-        "oldestForm": "ješče"
+        "oldestForm": "ješče",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "šťesťí",
-        "oldestForm": "ščestí"
+        "oldestForm": "ščestí",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "zelí",
-        "oldestForm": "zelé"
+        "oldestForm": "zelé",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "šťáva",
-        "oldestForm": "ščáva"
+        "oldestForm": "ščáva",
+        "type":"transform",
+        "state": {}
     },
     {
         "currentForm": "nebožťík",
-        "oldestForm": "nebožčík"
+        "oldestForm": "nebožčík",
+        "type":"transform",
+        "state": {}
     }
 ]

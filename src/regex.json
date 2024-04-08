@@ -108,6 +108,18 @@
         ]
     },
     {
+        "id": "zmena-cr-str",
+        "period": 1,
+        "periodName":"Čeština 14. století",
+        "name": "změna čř na stř",
+        "patterns": [
+            {
+                "search": "čř",
+                "replace": "stř"
+            }
+        ]
+    },
+    {
         "id": "diftong-zadni-vokal-o-uo",
         "period": 2,
         "periodName": "Čeština doby husitské",
@@ -186,8 +198,8 @@
         "name": "změna tautosylabického aj > ej",
         "patterns": [
             {
-                "search": "aj",
-                "replace": "ej"
+                "search": "([^aeiyou]|^)aj([^aeiyou]|$)",
+                "replace": "$1ej$2"
             }
         ]
     },

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
+import Info from "./info.js";
 import regexData from "../regex.json";
 import "../styles/MainTool.css";
 import dictionaryData from "../dictionary.json";
@@ -51,7 +52,7 @@ function MainTool() {
         const dictionaryEntry = dictionaryEntryCurrentForm || dictionaryEntryOldForm;
 
         let partNumber = "";
-        let result = { transformedText: "", ruleNames: [] }; // Initialize the result object here
+        let result = { transformedText: "", ruleNames: [] };
 
         if (dictionaryEntry) {
           switch (index) {
@@ -183,9 +184,11 @@ function MainTool() {
       <h1>{text}</h1>
       <p>{part}</p>
       <div className="applied-rules">
-        {appliedRules.map((index) => (
-          <p key={index}></p>
+        {appliedRules.map((ruleName, index) => (
+          <p key={index}>{ruleName}</p>
         ))}
+        {}
+        <Info partNumber={part} /> {}
       </div>
     </div>
   );
