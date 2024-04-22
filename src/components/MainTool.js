@@ -1,23 +1,20 @@
 import React, { useState, useEffect, useCallback } from "react";
-import Info from "./info.js";
 import regexData from "../regex.json";
 import "../styles/MainTool.css";
 import dictionaryData from "../dictionary.json";
 
-function recognizePeriod(inputText) {
+function recognizeForm(inputText) {
   for (const forms of dictionaryData) {
     if (forms.currentForm === inputText) {
-      console.log("currentform");
       return "currentform";
     } else if (forms.oldestForm === inputText) {
-      console.log("oldform");
       return "oldform";
     }
   }
   return "";
 }
 
-function applyRegex(inputText, periods) {
+function applyRegex(inputText, periods, currentPeriod) {
   let appliedRuleNames = [];
 
   regexData.forEach((periodData) => {
@@ -26,13 +23,14 @@ function applyRegex(inputText, periods) {
         const regex = new RegExp(pattern.search, "g");
         if (regex.test(inputText)) {
           inputText = inputText.replace(regex, pattern.replace);
-          appliedRuleNames.push(periodData.name);
+          appliedRuleNames.push({ name: periodData.name, period: periodData.period });
         }
       });
     }
   });
 
-  return { transformedText: inputText, ruleNames: appliedRuleNames };
+  const filteredRules = appliedRuleNames.filter((rule) => rule.period === currentPeriod).map((rule) => rule.name);
+  return { transformedText: inputText, ruleNames: filteredRules };
 }
 
 function MainTool() {
@@ -56,17 +54,38 @@ function MainTool() {
 
         if (dictionaryEntry) {
           switch (index) {
-            case 0:
-              partNumber = "Humanistická čeština a novější";
-              result = applyRegex(dictionaryEntry.oldestForm, [1, 2, 3]);
-              break;
             case 1:
-              partNumber = "Čeština doby husitské";
-              result = applyRegex(dictionaryEntry.oldestForm, [1, 2]);
+              partNumber = "Čeština 14. století";
+              if (dictionaryEntry.exception[1] === false) {
+                result = applyRegex(dictionaryEntry.oldestForm, [1], 1);
+              } else {
+                result = { transformedText: dictionaryEntry.exception[1], ruleNames: [] };
+              }
               break;
             case 2:
-              partNumber = "Čeština 14. století";
-              result = applyRegex(dictionaryEntry.oldestForm, [1]);
+              partNumber = "Čeština doby husitské";
+              if (dictionaryEntry.exception[1] !== false) {
+                result = applyRegex(dictionaryEntry.exception[1], [1, 2], 2);
+              } else {
+                if (dictionaryEntry.exception[2] === false) {
+                  result = applyRegex(dictionaryEntry.oldestForm, [1, 2], 2);
+                } else {
+                  result = { transformedText: dictionaryEntry.exception[2], ruleNames: [] };
+                }
+              }
+              break;
+            case 3:
+              partNumber = "Humanistická čeština a novější";
+              if (dictionaryEntry.exception[1] !== false || dictionaryEntry.exception[2] !== false) {
+                result = applyRegex(dictionaryEntry.exception[2], [1, 2], 2);
+                result = applyRegex(result.transformedText, [1, 2, 3], 3);
+              } else {
+                if (dictionaryEntry.exception[3] === false) {
+                  result = applyRegex(dictionaryEntry.oldestForm, [1, 2, 3], 3);
+                } else {
+                  result = { transformedText: dictionaryEntry.exception[3], ruleNames: [] };
+                }
+              }
               break;
             default:
               partNumber = "Starší než 14. století";
@@ -93,18 +112,18 @@ function MainTool() {
       setLeftButtonDisabled(true);
       setRightButtonDisabled(true);
     } else {
-      const period = recognizePeriod(inputWord);
+      const period = recognizeForm(inputWord);
 
       if (period === "currentform") {
         setText(inputWord);
-        setCurrentPartIndex(0);
-        updatePart(0);
+        setCurrentPartIndex(3);
+        updatePart(3);
         setLeftButtonDisabled(false);
         setRightButtonDisabled(true);
       } else if (period === "oldform") {
         setText(inputWord);
-        setCurrentPartIndex(3);
-        updatePart(3);
+        setCurrentPartIndex(0);
+        updatePart(0);
         setLeftButtonDisabled(true);
         setRightButtonDisabled(false);
       } else {
@@ -124,71 +143,60 @@ function MainTool() {
     if (inputWord.trim() !== "") {
       if (newIndex >= 0 && newIndex < 4) {
         setCurrentPartIndex(newIndex);
-        console.log("Current Part Index:", newIndex);
-
         updatePart(newIndex);
       }
     } else {
       setCurrentPartIndex(0);
-      console.log("Current Part Index: 0");
-
       updatePart(0);
     }
 
-    if (newIndex === 3) {
-      setLeftButtonDisabled(true);
-    } else {
-      setLeftButtonDisabled(false);
-    }
-
-    if (newIndex === 0) {
-      setRightButtonDisabled(true);
-    } else {
-      setRightButtonDisabled(false);
-    }
+    setLeftButtonDisabled(newIndex === 0);
+    setRightButtonDisabled(newIndex === 3);
   }
 
   return (
     <div className="main-tool-container">
-      <input
-        type="text"
-        value={inputWord}
-        onChange={(event) => setInputWord(event.target.value)}
-        placeholder="Enter word"
-        list="suggested-words"
-      />
+      <div className="input-buttons-container">
+        <input
+          type="text"
+          value={inputWord}
+          onChange={(event) => setInputWord(event.target.value.toLowerCase())}
+          placeholder="Napište slovo"
+          list="suggested-words"
+        />
 
-      <datalist id="suggested-words">
-        {dictionaryData.map((entry, index) => (
-          <React.Fragment key={index}>
-            <option value={entry.currentForm} />
-            <option value={entry.oldestForm} />
-          </React.Fragment>
-        ))}
-      </datalist>
+        <datalist id="suggested-words">
+          {dictionaryData
+            .flatMap((entry) => [entry.currentForm, entry.oldestForm])
+            .map((value, index) => (
+              <option key={index} value={value} />
+            ))}
+        </datalist>
 
-      <div className="part-buttons">
-        <button
-          onClick={() => handlePartChange(1)}
-          disabled={leftButtonDisabled || !inputWord.trim() || recognizePeriod(inputWord) === ""}
-        >
-          ←
-        </button>
-        <button
-          onClick={() => handlePartChange(-1)}
-          disabled={rightButtonDisabled || !inputWord.trim() || recognizePeriod(inputWord) === ""}
-        >
-          →
-        </button>
+        <div className="part-buttons">
+          <button
+            onClick={() => handlePartChange(-1)}
+            disabled={leftButtonDisabled || !inputWord.trim() || recognizeForm(inputWord) === ""}
+          >
+            ←
+          </button>
+          <button
+            onClick={() => handlePartChange(1)}
+            disabled={rightButtonDisabled || !inputWord.trim() || recognizeForm(inputWord) === ""}
+          >
+            →
+          </button>
+        </div>
       </div>
-      <h1>{text}</h1>
-      <p>{part}</p>
+      <div className="word-period">
+        <h1>{text}</h1>
+        <p>{part}</p>
+      </div>
+
       <div className="applied-rules">
-        {appliedRules.map((ruleName, index) => (
-          <p key={index}>{ruleName}</p>
+        {appliedRules.map((rule, index) => (
+          <p key={index}>{rule}</p>
         ))}
-        {}
-        <Info partNumber={part} /> {}
       </div>
     </div>
   );

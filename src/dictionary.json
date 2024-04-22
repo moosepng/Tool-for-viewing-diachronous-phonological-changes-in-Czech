@@ -2,355 +2,296 @@
     {
         "currentForm": "cit",
         "oldestForm": "c'ut",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "cíditi",
         "oldestForm": "c'úditi",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "cítiti",
         "oldestForm": "c'utiti",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "cizí",
         "oldestForm": "c'uzí",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "čelist",
-        "oldestForm": "čel'usť",
-        "type":"transform",
-        "state": {}
+        "oldestForm": "čel'ust",
+        "exception":[false, false, false, false]
     },
     {
-        "currentForm": "čít",
+        "currentForm": "číti",
         "oldestForm": "čúti",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "jih",
         "oldestForm": "juh",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "Jiří",
         "oldestForm": "Juří",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "jitro",
         "oldestForm": "jutro",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "klíče",
         "oldestForm": "kl'účě",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "kožich",
         "oldestForm": "kožuch",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "líbati",
         "oldestForm": "l'úbati",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "plíce",
         "oldestForm": "pl'úcě",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "seno",
         "oldestForm": "sěno",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "duše",
         "oldestForm": "dušě",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "duše",
         "oldestForm": "dušě",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "říjen",
         "oldestForm": "řújen",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "šťír",
         "oldestForm": "ščúr",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "ťisíc",
         "oldestForm": "tis'úc",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "vúňe",
         "oldestForm": "wóňe",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "muže",
         "oldestForm": "mužě",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "vjeno",
         "oldestForm": "věno",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "místo",
         "oldestForm": "mě̄sto",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "mňesto",
         "oldestForm": "město",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "dílo",
         "oldestForm": "dě̄lo",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "míra",
         "oldestForm": "mě̄ra",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "čert",
         "oldestForm": "čr̥t",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "červený",
         "oldestForm": "čr̥wený",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "žerď",
         "oldestForm": "žr̥ď",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "Br̥do",
         "oldestForm": "Bir̥do",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "vr̥ba",
         "oldestForm": "vir̥ba",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "sr̥dce",
         "oldestForm": "sir̥dce",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "vl̥k",
         "oldestForm": "wil̥k",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "mám",
         "oldestForm": "jmám",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "cesta",
         "oldestForm": "cěsta",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "řeka",
         "oldestForm": "řěka",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "kúň",
         "oldestForm": "kóň",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "búh",
         "oldestForm": "bóh",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "dúm",
         "oldestForm": "dóm",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "dúl",
         "oldestForm": "dól",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "dvúr",
         "oldestForm": "dwór",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "soud",
         "oldestForm": "súd",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "soused",
         "oldestForm": "súsěd",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "budoucí",
         "oldestForm": "budúcí",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "míra",
         "oldestForm": "mě̄ra",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "víra",
         "oldestForm": "wě̄ra",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "luk",
         "oldestForm": "łuk",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "vúči",
         "oldestForm": "wóči",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "svúj",
         "oldestForm": "swój",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "vejce",
         "oldestForm": "wajce",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "krejčí",
         "oldestForm": "krajčí",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "misleti",
         "oldestForm": "mysleti",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "sin",
         "oldestForm": "syn",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "jazik",
         "oldestForm": "jazyk",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "ješťe",
         "oldestForm": "ješče",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "šťesťí",
         "oldestForm": "ščestí",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "zelí",
         "oldestForm": "zelé",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "šťáva",
         "oldestForm": "ščáva",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     },
     {
         "currentForm": "nebožťík",
         "oldestForm": "nebožčík",
-        "type":"transform",
-        "state": {}
+        "exception":[false, false, false, false]
     }
 ]

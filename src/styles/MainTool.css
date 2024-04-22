@@ -1,17 +1,64 @@
+.main-tool-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: #f9f9f9;
+}
+
+.word-period {
+  text-align: center;
+}
+
+.input-buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  width: 90%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
 .part-buttons {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 300px;
 }
 
 .part-buttons button {
-  margin: 0 5px;
-  font-size: 1.5rem;
-  padding: 5px 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: navy;
+  color: #fff;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .part-buttons button:disabled {
-  opacity: 0.5;
+  background-color: #ccc;
   cursor: not-allowed;
+}
+
+.applied-rules {
+  margin-top: 20px;
+}
+
+.applied-rules p {
+  padding: 5px 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }

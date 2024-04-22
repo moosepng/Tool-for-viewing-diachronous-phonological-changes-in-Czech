@@ -58,7 +58,7 @@
                 "replace": "$1je"
             },
             {
-                "search": "([tkdgcčďsšzžnlrř])ě",
+                "search": "([^pbmvf])ě",
                 "replace": "$1e"
             }
         ]
@@ -123,7 +123,7 @@
         "id": "diftong-zadni-vokal-o-uo",
         "period": 2,
         "periodName": "Čeština doby husitské",
-        "name": "diftongizace zadního vokálu ó > u̯ o",
+        "name": "diftongizace zadního vokálu ó > u̯o",
         "patterns": [
             {
                 "search": "ó",
@@ -135,7 +135,7 @@
         "id": "diftong-u-ou",
         "period": 2,
         "periodName": "Čeština doby husitské",
-        "name": "diftongizace ú > o̬u̯ 1",
+        "name": "diftongizace ú > o̬u̯",
         "patterns": [
             {
                 "search": "ú",
@@ -175,7 +175,7 @@
         "patterns": [
             {
                 "search": "mje",
-                "replace": "mňě"
+                "replace": "mňe"
             }
         ]
     },
@@ -183,7 +183,7 @@
         "id":"monoftong-uo-u",
         "period": 3,
         "periodName": "Humanistická čeština",
-        "name": "monoftongizace u̯ o > ú",
+        "name": "monoftongizace u̯o > ú",
         "patterns": [
             {
                 "search": "u̯o",
