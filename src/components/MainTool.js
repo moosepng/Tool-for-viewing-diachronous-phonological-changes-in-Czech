@@ -75,7 +75,7 @@ function MainTool() {
               }
               break;
             case 3:
-              partNumber = "Humanistická čeština a novější";
+              partNumber = "Humanistická čeština a dále";
               if (dictionaryEntry.exception[1] !== false || dictionaryEntry.exception[2] !== false) {
                 result = applyRegex(dictionaryEntry.exception[2], [1, 2], 2);
                 result = applyRegex(result.transformedText, [1, 2, 3], 3);

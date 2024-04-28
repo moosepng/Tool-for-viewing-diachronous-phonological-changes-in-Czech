@@ -165,11 +165,6 @@
         "exception":[false, false, false, false]
     },
     {
-        "currentForm": "mám",
-        "oldestForm": "jmám",
-        "exception":[false, false, false, false]
-    },
-    {
         "currentForm": "cesta",
         "oldestForm": "cěsta",
         "exception":[false, false, false, false]
