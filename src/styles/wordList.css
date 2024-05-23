@@ -1,0 +1,50 @@
+.word-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.word-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.word-list-table th {
+  border-bottom: 1px solid black;
+}
+.word-list-table td {
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+  background-color: white;
+}
+
+.word-list-table th {
+  background-color: #f2f2f2;
+}
+
+.word-list-table ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.word-list-table ul li {
+  margin-bottom: 5px;
+}
+
+h2,
+p,
+th,
+td {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
